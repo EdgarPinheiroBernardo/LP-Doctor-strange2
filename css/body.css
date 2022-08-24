@@ -1,0 +1,35 @@
+html, body{
+    position: relative; /* tudo para na pagina */
+    overflow: hidden;     /* tudo que estiver fora da area da responsividade não aparece */
+
+   
+}
+body{
+    height: 100vh;
+    background: linear-gradient( 90deg, #000 , #000e 35%,#000A , #0000),
+    url(../img/background.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 128px 50px 128px;
+    animation: zoom 1.5s alternate; /* animação @keyframes css */
+   
+}
+@media (max-width:768px) {
+    body{
+        padding: 30px 30px 25px 30px;
+        background-image: url(../img/background.png);
+        background-color: #0006;
+        background-blend-mode: darken;
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
